@@ -1,3 +1,21 @@
+# Step 1: Spliting UI
+
+Rental Software
+
+
+- SearchBox
+- Two buttons
+- Booking Modal
+  - Product dropdown
+  - Start date
+  - End date
+- Book confirm popup
+  - Message
+  - Confirmation whether Yes Or No 
+- Return Modal
+- Return confirm popup
+  - Confirm button
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
