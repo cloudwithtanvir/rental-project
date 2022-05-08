@@ -1,5 +1,5 @@
 import "./App.css";
-import HomeTable from "./components/HomeTable";
+import RentalDataTable from "./components/RentalDataTable";
 import Homepage from "./pages/Homepage";
 
 function App() {

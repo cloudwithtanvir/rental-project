@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import data from "../Data.json";
-import Modal from "./Modal";
+import ModalBook from "./ModalBook";
 import ModalReturn from "./ModalReturn";
 
-const HomeTable = () => {
+const RentalDataTable = () => {
   const [input, setInput] = useState("");
   const [modifiedData, setmodifiedData] = useState(data);
   const [modal, setModal] = useState(false);
@@ -137,7 +137,7 @@ const HomeTable = () => {
 
         <div className="mt-6 flex justify-end mr-20 mb-10">
           <div className="mr-5">
-            <Modal />
+            <ModalBook />
           </div>
 
           <div className="mr-5">
@@ -150,4 +150,4 @@ const HomeTable = () => {
   );
 };
 
-export default HomeTable;
+export default RentalDataTable;

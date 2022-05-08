@@ -1,10 +1,10 @@
 import React from 'react'
-import HomeTable from '../components/HomeTable';
+import RentalDataTable from '../components/RentalDataTable';
 
 const Homepage = () => {
   return (
     <div className="bg-slate-100">
-      <HomeTable />
+      <RentalDataTable />
     </div>
   );
 }
