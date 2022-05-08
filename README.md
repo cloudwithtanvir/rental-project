@@ -2,7 +2,7 @@
 
 Rental Software
 
-
+- Displaying Data from Json
 - SearchBox
 - Two buttons
 - Booking Modal
@@ -11,7 +11,7 @@ Rental Software
   - End date
 - Book confirm popup
   - Message
-  - Confirmation whether Yes Or No 
+  - Confirmation whether Yes Or No
 - Return Modal
 - Return confirm popup
   - Confirm button
