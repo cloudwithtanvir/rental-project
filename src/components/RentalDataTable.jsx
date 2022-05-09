@@ -32,13 +32,13 @@ const RentalDataTable = () => {
                   onChange={(e) => setInput(e.target.value)}
                 />
 
-                <button
+                {/* <button
                   className="btn inline-block px-6 py-2 border-2 border-black text-orange-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                   type="button"
                   onClick={() => searchFn()}
                 >
                   Search
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
