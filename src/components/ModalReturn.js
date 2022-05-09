@@ -45,15 +45,20 @@ const ModalReturn = () => {
                           <option value={d.name}>{d.name}</option>
                         ))}
                       </select>
+
+                      <div class="max-w-6xl flex justify-center">
+                        <input type="Number" placeholder=" Mileage" />
+                      </div>
+
                       {/* Dropdown end */}
                       {/* Date start */}
-                      <div>
+                      {/* <div>
                         <span className="mr-2">From: </span>
                         <input type="date" name="from" />
                         <br />
                         <span className="mr-7">To: </span>
                         <input type="date" id="birthday" name="to" />
-                      </div>
+                      </div> */}
                       {/* Date end */}
                     </div>
                   </div>
