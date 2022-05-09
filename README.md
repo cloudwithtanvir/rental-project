@@ -1,6 +1,16 @@
-# Step 1: Spliting UI
+# Step 1: Requiremnt Analysis & Planning 
 
-At first, I went through the project's details & figure out 
+At first, I went through the project's details & tried to understand the requirements. Then I started thinking which technology stack & resources should I use. 
+
+I started reading & following :
+
+1. https://reactjs.org/docs/create-a-new-react-app.html
+
+2. https://tailwindcss.com/docs/guides/create-react-app
+
+
+# Step 2: Spliting UI
+
 
 Rental Software
 
