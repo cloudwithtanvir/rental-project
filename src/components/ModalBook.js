@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import data from "../Data.json";
 
 const ModalBook = () => {
@@ -19,7 +19,6 @@ const ModalBook = () => {
 
     // To calculate the no. of days between two dates
     var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-    console.log("onButtonClick", Difference_In_Days);
     setShowBookedModal(true);
     //setShowBookModal(false)
     setprice(prod[0].price * (Difference_In_Days + 1)); // Since start date = end date, the rental period is 1 day.
@@ -29,8 +28,13 @@ const ModalBook = () => {
       return el.code === e;
     });
     setProd(newArray)
-    console.log('onButtonClick 22',e,newArray)
   };
+  useEffect(() => {
+    var newArray = data.filter(function (el) {
+      return el.code === 'p1';
+    });
+    setProd(newArray)
+  }, []);
 
   return (
     <>

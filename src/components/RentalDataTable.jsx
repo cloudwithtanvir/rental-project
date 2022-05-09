@@ -8,7 +8,17 @@ const RentalDataTable = () => {
   const [modifiedData, setmodifiedData] = useState(data);
   const [modal, setModal] = useState(false);
 
-  const searchFn = () => {
+  // const searchFn = () => {
+  //   setmodifiedData(
+  //     data.filter(
+  //       (d) => d.name.toLowerCase().indexOf(input.toLowerCase()) !== -1
+  //     )
+  //   );
+  //   console.log(modifiedData);
+  // };
+  const searchFn = (value) => {
+    setInput(value)
+    console.log('searchFn',value)
     setmodifiedData(
       data.filter(
         (d) => d.name.toLowerCase().indexOf(input.toLowerCase()) !== -1
@@ -16,6 +26,7 @@ const RentalDataTable = () => {
     );
     console.log(modifiedData);
   };
+
 
   return (
     <div className="flex justify-center">
@@ -29,7 +40,7 @@ const RentalDataTable = () => {
                   className="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none"
                   placeholder="Search"
                   value={input}
-                  onChange={(e) => setInput(e.target.value)}
+                  onChange={(e) => searchFn(e.target.value)}
                 />
 
                 {/* <button
