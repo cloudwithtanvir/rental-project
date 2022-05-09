@@ -1,5 +1,7 @@
 # Step 1: Spliting UI
 
+At first, I went through the project's details & figure out 
+
 Rental Software
 
 - Displaying Data from Json
@@ -15,6 +17,7 @@ Rental Software
 - Return Modal
 - Return confirm popup
   - Confirm button
+
 
 # Getting Started with Create React App
 

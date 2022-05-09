@@ -21,7 +21,7 @@ const ModalReturn = () => {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">Booking...</h3>
+                  <h3 className="text-3xl font-semibold">Returning...</h3>
                   <button
                     className="text-black float-right text-3xl"
                     onClick={() => setShowModal(false)}
@@ -34,7 +34,7 @@ const ModalReturn = () => {
                   <div className="max-w-6xl flex justify-center">
                     {/* Dropdown start */}
                     <div className="">
-                      <label for="cars">Book a product</label>
+                      <label for="cars">Return a product</label>
                       <select
                         className="ml-5 mb-5"
                         name="cars"
