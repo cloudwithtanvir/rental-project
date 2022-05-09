@@ -13,16 +13,16 @@ const ModalBook = () => {
   const onButtonClick = () => {
     var date1 = new Date(fromDate);
     var date2 = new Date(toDate);
-      
+
     // To calculate the time difference of two dates
     var Difference_In_Time = date2.getTime() - date1.getTime();
-      
+
     // To calculate the no. of days between two dates
     var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-    console.log('onButtonClick',Difference_In_Days)
-    setShowBookedModal(true)
+    console.log("onButtonClick", Difference_In_Days);
+    setShowBookedModal(true);
     //setShowBookModal(false)
-    setprice(prod[0].price * (Difference_In_Days+1))
+    setprice(prod[0].price * (Difference_In_Days + 1)); // Since start date = end date, the rental period is 1 day.
   };
   const onProdChange = (e) => {
     var newArray = data.filter(function (el) {
