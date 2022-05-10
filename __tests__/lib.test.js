@@ -1,4 +1,3 @@
-
-    test("testing genarate result", () => {
- v        expect()
-    });
+test("testing genarate result", () => {
+  expect();
+});
