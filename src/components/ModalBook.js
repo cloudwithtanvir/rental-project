@@ -1,3 +1,9 @@
+
+/**
+ * @author ${Tanvir Ahmed}
+ * @email ${tanvirewu32@gmail.com}
+ * ${tags}
+ */
 // This is basicallly a modal for booking the product & estimating the price .
 import React, { useState, useEffect } from "react";
 import data from "../Data.json";
@@ -72,11 +78,11 @@ const ModalBook = () => {
                       <div className="max-w-6xl flex justify-center">
                         {/* Dropdown start */}
                         <div className="">
-                          <label for="cars">Book a product</label>
+                          <label for="product">Book a product</label>
                           <select
                             className="ml-5 mb-5"
-                            name="cars"
-                            id="cars"
+                            name="product"
+                            id="product"
                             onChange={(e) => onProdChange(e.target.value)}
                           >
                             {data.map((d) => (
@@ -128,7 +134,7 @@ const ModalBook = () => {
 
                 {showBookedModal && (
                   <div className="">
-                    <label for="cars">Your Estimated Price is {price}</label>
+                    <label for="product">Your Estimated Price is {price}</label>
 
                     {/* Date end */}
                   </div>

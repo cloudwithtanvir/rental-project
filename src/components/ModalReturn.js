@@ -1,3 +1,8 @@
+/**
+ * @author ${Tanvir Ahmed}
+ * @email ${tanvirewu32@gmail.com}
+ * ${tags}
+ */
 import React, { useState } from "react";
 import data from "../Data.json";
 
@@ -34,11 +39,11 @@ const ModalReturn = () => {
                   <div className="max-w-6xl flex justify-center">
                     {/* Dropdown start */}
                     <div className="">
-                      <label for="cars">Return a product</label>
+                      <label for="product">Return a product</label>
                       <select
                         className="ml-5 mb-5"
-                        name="cars"
-                        id="cars"
+                        name="product"
+                        id="product"
                         onChange={(e) => setProd(e.target.value)}
                       >
                         {data.map((d) => (

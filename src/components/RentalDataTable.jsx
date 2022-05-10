@@ -1,3 +1,9 @@
+/**
+ * @author ${Tanvir Ahmed}
+ * @email ${tanvirewu32@gmail.com}
+ * ${tags}
+ */
+
 import React, { useState } from "react";
 import data from "../Data.json";
 import ModalBook from "./ModalBook";
@@ -9,8 +15,8 @@ const RentalDataTable = () => {
   const [modal, setModal] = useState(false);
 
   const searchFn = (value) => {
-    setInput(value)
-    console.log('searchFn',value)
+    setInput(value);
+    console.log("searchFn", value);
     setmodifiedData(
       data.filter(
         (d) => d.name.toLowerCase().indexOf(input.toLowerCase()) !== -1
@@ -18,7 +24,6 @@ const RentalDataTable = () => {
     );
     console.log(modifiedData);
   };
-
 
   return (
     <div className="flex justify-center">
