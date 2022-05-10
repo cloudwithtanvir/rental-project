@@ -1,4 +1,5 @@
-import React, { useState,useEffect } from "react";
+// This is basicallly a modal for booking the product & estimating the price .
+import React, { useState, useEffect } from "react";
 import data from "../Data.json";
 
 const ModalBook = () => {
@@ -27,13 +28,13 @@ const ModalBook = () => {
     var newArray = data.filter(function (el) {
       return el.code === e;
     });
-    setProd(newArray)
+    setProd(newArray);
   };
   useEffect(() => {
     var newArray = data.filter(function (el) {
-      return el.code === 'p1';
+      return el.code === "p1";
     });
-    setProd(newArray)
+    setProd(newArray);
   }, []);
 
   return (
@@ -53,79 +54,89 @@ const ModalBook = () => {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
 
-                {showBookModal &&
-                <>
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">Booking...</h3>
-                  <button
-                    className="text-black float-right text-3xl"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <span className="text-black h-6 w-6 text-2xl block">X</span>
-                  </button>
-                </div>
-                {/*body*/}
-                <div className="relative p-6 flex-auto">
-                  <div className="max-w-6xl flex justify-center">
-                    {/* Dropdown start */}
-                    <div className="">
-                      <label for="cars">Book a product</label>
-                      <select
-                        className="ml-5 mb-5"
-                        name="cars"
-                        id="cars"
-                        onChange={(e) => onProdChange(e.target.value)}
+                {showBookModal && (
+                  <>
+                    <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                      <h3 className="text-3xl font-semibold">Booking...</h3>
+                      <button
+                        className="text-black float-right text-3xl"
+                        onClick={() => setShowModal(false)}
                       >
-                        {data.map((d) => (
-                          <option value={d.code}>{d.name}</option>
-                        ))}
-                      </select>
-                      {/* Dropdown end */}
-                      {/* Date start */}
-                      <div>
-                        <span className="mr-2">From: </span>
-                        <input value={fromDate} type="date" name="from" onChange={(e)=>  setFromDate(e.target.value)}/>
-                        <br />
-                        <span className="mr-7">To: </span>
-                        <input type="date" value={toDate}  name="to" onChange={(e)=>  setToDate(e.target.value)} />
-                      </div>
-                      {/* Date end */}
+                        <span className="text-black h-6 w-6 text-2xl block">
+                          X
+                        </span>
+                      </button>
                     </div>
+                    {/*body*/}
+                    <div className="relative p-6 flex-auto">
+                      <div className="max-w-6xl flex justify-center">
+                        {/* Dropdown start */}
+                        <div className="">
+                          <label for="cars">Book a product</label>
+                          <select
+                            className="ml-5 mb-5"
+                            name="cars"
+                            id="cars"
+                            onChange={(e) => onProdChange(e.target.value)}
+                          >
+                            {data.map((d) => (
+                              <option value={d.code}>{d.name}</option>
+                            ))}
+                          </select>
+                          {/* Dropdown end */}
+                          {/* Date start */}
+                          <div>
+                            <span className="mr-2">From: </span>
+                            <input
+                              value={fromDate}
+                              type="date"
+                              name="from"
+                              onChange={(e) => setFromDate(e.target.value)}
+                            />
+                            <br />
+                            <span className="mr-7">To: </span>
+                            <input
+                              type="date"
+                              value={toDate}
+                              name="to"
+                              onChange={(e) => setToDate(e.target.value)}
+                            />
+                          </div>
+                          {/* Date end */}
+                        </div>
+                      </div>
+                    </div>
+                    {/*footer*/}
+                    <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                      <button
+                        className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button"
+                        onClick={() => setShowModal(false)}
+                      >
+                        Close
+                      </button>
+                      <button
+                        className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button"
+                        onClick={() => onButtonClick()}
+                      >
+                        Confirm booking
+                      </button>
+                    </div>
+                  </>
+                )}
+
+                {showBookedModal && (
+                  <div className="">
+                    <label for="cars">Your Estimated Price is {price}</label>
+
+                    {/* Date end */}
                   </div>
-                </div>
-                {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                  <button
-                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Close
-                  </button>
-                  <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => onButtonClick()}
-                  >
-                    Confirm booking
-                  </button>
-                </div>
-                </>
-}
-                
-                {showBookedModal &&
-                     <div className="">
-                     <label for="cars">Your Estimated Price is {price}</label>
-                 
-                     {/* Date end */}
-                   </div>
-               }
-   
+                )}
               </div>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black">
-          </div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
     </>

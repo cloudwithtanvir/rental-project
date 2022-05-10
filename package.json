@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -16,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false && react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,7 +36,10 @@
       "last 1 safari version"
     ]
   },
+  "author": "Tanvir Ahmed <tanvirewu32@gmail.com>",
+  "license": "UNLICENSED", 
   "devDependencies": {
+    "@testing-library/react": "^13.2.0",
     "autoprefixer": "^10.4.5",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.24"

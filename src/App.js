@@ -1,9 +1,9 @@
 import "./App.css";
+// import Homepage from "./pages/Homepage";
 import RentalDataTable from "./components/RentalDataTable";
-import Homepage from "./pages/Homepage";
 
 function App() {
-  return <Homepage />;
+  return <RentalDataTable />;
 }
 
 export default App;

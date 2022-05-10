@@ -8,6 +8,7 @@ I started reading & following :
 
 2. https://tailwindcss.com/docs/guides/create-react-app
 
+3. https://www.freecodecamp.org/news/build-a-search-filter-using-react-and-react-hooks/
 
 # Step 2: Spliting UI
 
