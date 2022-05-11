@@ -1,15 +1,12 @@
-
-/**
- * @author ${Tanvir Ahmed}
- * @email ${tanvirewu32@gmail.com}
- * ${tags}
- */
 import "./App.css";
-// import Homepage from "./pages/Homepage";
-import RentalDataTable from "./components/RentalDataTable";
+import RentalHomeDataTable from "./components/RentalHomeDataTable";
 
 function App() {
-  return <RentalDataTable />;
+  return (
+    <div className="App">
+      <RentalHomeDataTable />
+    </div>
+  );
 }
 
 export default App;
