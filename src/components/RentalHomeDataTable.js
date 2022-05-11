@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 10,
   },
 }));
-export default function Home() {
+export default function RentalHomeDataTable() {
   const classes = useStyles();
   const [rows, setRows] = React.useState(initDataFromLocalStorage(Data));
   const [selectedProduct, setSelectedProduct] = React.useState(null);

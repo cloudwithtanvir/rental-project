@@ -2,13 +2,20 @@
 
 At first, I went through the project's details & tried to understand the requirements. Then I started thinking which technology stack & resources should I use. 
 
-I started reading & following :
+// Started by following the recommander article 
+
+- https://www.freecodecamp.org/news/the-essential-guide-to-take-home-coding-challenges-a0e746220dd7/
+
+I started reading & following by those:
 
 1. https://reactjs.org/docs/create-a-new-react-app.html
 
 2. https://tailwindcss.com/docs/guides/create-react-app
 
 3. https://www.freecodecamp.org/news/build-a-search-filter-using-react-and-react-hooks/
+
+4. https://blog.logrocket.com/using-localstorage-react-hooks/
+
 
 # Step 2: Spliting UI
 
