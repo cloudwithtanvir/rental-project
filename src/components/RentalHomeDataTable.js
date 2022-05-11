@@ -15,13 +15,17 @@ function insertIDs(data) {
   return temp;
 }
 
-//fetch data from localstorage if available,else set from json data
+// SetItem is mainly used for saving the data in localStorage
+
+// initDataFromLocalStorage funtion is mainly used for fetch data from localstorage if available,else set from json data 
 function initDataFromLocalStorage(data) {
   if (!localStorage.getItem("dataList")) {
     localStorage.setItem("dataList", JSON.stringify(insertIDs(data)));
   }
-
+// Using JSON.stringify in the setItem is optional when saving string data to the storage.However, JSON.stringify is required if the value is a different data type, like an object or array.
   const fetchedData = JSON.parse(localStorage.getItem("dataList"));
+
+// Here the getItem() storage method to retrieve data from the local storage.  
   return fetchedData;
 }
 
@@ -74,7 +78,7 @@ export default function RentalHomeDataTable() {
       />
 
       <Snackbar
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={showNotification}
         onClose={() => setNotificationOpen(false)}
         message="Rental Info Updated"

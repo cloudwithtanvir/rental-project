@@ -110,7 +110,7 @@ export default function ProductCheckout({
       />
 
       <Snackbar
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={showNotification}
         onClose={() => setNotificationOpen(false)}
         message="Product is not durable to book"
