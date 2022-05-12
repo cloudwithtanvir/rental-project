@@ -18,8 +18,8 @@ import DisabledDateRangePicker from "../../../components/DisabledDateRangePicker
 import ProductInfo from "../../../components/ProductInfo";
 import PopUpFooterSection from "../../../Modal/PopUpFooterSection";
 import MileageInputForReturn from "../../../components/MileageInputForReturn";
-import {DifferenceInDay} from "../../../utils/fumctions";
-import {IntegerValidation} from "../../../utils/fumctions";
+import {DifferenceInDay} from "../../../Modal/BookAndReturn/BookAndReturnCalcu";
+import {IntegerValidation} from "../../../Modal/BookAndReturn/BookAndReturnCalcu";
 
 const useStyles = makeStyles((theme) => ({
   root: {

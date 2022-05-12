@@ -5,8 +5,8 @@ import Snackbar from "@material-ui/core/Snackbar";
 import CheckoutDialog from "./components/CheckoutDialog";
 import ConfirmationDialog from "./components/ConfirmationDialog";
 import ButtonGroup from "./components/ButtonGroup";
-import {postBooking} from "../../utils/fumctions"
-import {postReturn} from "../../utils/fumctions";
+import {postBooking} from "../../components/CalcBook"
+import {postReturn} from "../../components/CalcReturn"
 
 const useStyles = makeStyles((theme) => ({
   root: {

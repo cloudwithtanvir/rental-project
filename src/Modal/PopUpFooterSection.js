@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-import {calculateBookingCost} from "../utils/fumctions";
+import {calculateBookingCost} from "../Modal/BookAndReturn/BookAndReturnCalcu";
 
 const useStyles = makeStyles((theme) => ({
   root: {

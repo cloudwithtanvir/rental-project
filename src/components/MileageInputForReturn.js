@@ -1,7 +1,7 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
-import {IntegerValidation} from "../utils/fumctions";
+import {IntegerValidation} from "../Modal/BookAndReturn/BookAndReturnCalcu";
 
 const useStyles = makeStyles((theme) => ({
   root: {
