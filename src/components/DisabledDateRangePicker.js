@@ -8,7 +8,7 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 
-// import CustomToolbar from "./CustomToolbarDatePicker";
+import CustomToolbar from "./CustomToolbarDatePicker";
 
 export default function DisabledDateRangePicker({ startDate, endDate }) {
   return (

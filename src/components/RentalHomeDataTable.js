@@ -31,7 +31,7 @@ function initDataFromLocalStorage(data) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "80%",
+    width: "50%",
   },
   localStorageParagraph: {
     textAlign: "left",
