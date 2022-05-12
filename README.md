@@ -2,20 +2,13 @@
 
 At first, I went through the project's details & tried to understand the requirements. Then I started thinking which technology stack & resources should I use. 
 
-// Started by following the recommander article 
-
-- https://www.freecodecamp.org/news/the-essential-guide-to-take-home-coding-challenges-a0e746220dd7/
-
-I started reading & following by those:
+I started reading & following :
 
 1. https://reactjs.org/docs/create-a-new-react-app.html
 
 2. https://tailwindcss.com/docs/guides/create-react-app
 
 3. https://www.freecodecamp.org/news/build-a-search-filter-using-react-and-react-hooks/
-
-4. https://blog.logrocket.com/using-localstorage-react-hooks/
-
 
 # Step 2: Spliting UI
 
@@ -36,6 +29,10 @@ Rental Software
 - Return confirm popup
   - Confirm button
 
+
+# Step 3: Figuring out how to store data as it suggested not to use backend 
+
+As it's not recomanded not to use backend, so we don't have any database without data.json file. So, i figured out Js has already awesome solution that ia localStorage/sessionStorage oobject. So for fetching & storing data I have used localStorage.
 
 # Getting Started with Create React App
 
