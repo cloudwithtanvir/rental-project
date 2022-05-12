@@ -47,7 +47,12 @@ export default function RentalHomeDataTable() {
   const [rows, setRows] = React.useState(initDataFromLocalStorage(Data));
   const [selectedProduct, setSelectedProduct] = React.useState(null);
   const [showNotification, setNotificationOpen] = React.useState(false);
-
+  
+  const resetLocalstorage = () => {
+    console.log("ok");
+    if (localStorage.getItem("dataList")) localStorage.removeItem("dataList");
+    setRows(initDataFromLocalStorage(Data));
+  };
   const callBackForTable = (data) => {
     setSelectedProduct(data);
   };

@@ -25,19 +25,17 @@ export default function ProductInfo({ product }) {
         {Object.keys(product)
           .filter(
             (item) =>
-              item === "needing_repair" ||
+  
               item === "type" ||
               item === "price" ||
-              item === "mileage" ||
               item === "availability" ||
-              item === "durability" ||
               item === "minimum_rent_period"
           )
           .map((item) => {
             return (
-              <p style={{ margin: 0, padding: 0, fontSize: 12 }} key={item}>
+              <div style={{ margin: 0, padding: 0, fontSize: 18 }} key={item}>
                 <b>{item}</b> : {String(product[item])}
-              </p>
+              </div>
             );
           })}
       </Paper>
