@@ -15,18 +15,18 @@ I started reading & following :
 
 Rental Software
 
--[x] Displaying Data from Json
--[x] SearchBox
--[x] Two buttons
--[x] Checking whether product available for rent or not , If availibity true then product available for booking either available for returing.  
--[x] Modal/PopUp for Booking 
-  -[x] Product dropdown
-  -[x] Showing Product & checking condition
-  -[x] Start date
-  -[x] End date
--[x] Book confirm popup
-  -[x] Pop Up message 
-  -[x] Confirmation whether Yes Or No
+- [x] Displaying Data from Json
+- [x] SearchBox
+- [x] Two buttons
+- [x] Checking whether product available for rent or not , If availibity true then product available for booking either available for returing.  
+- [x] Modal/PopUp for Booking 
+  - [x] Product dropdown
+  - [x] Showing Product & checking condition
+  - [x] Start date
+  - [x] End date
+- [x] Book confirm popup
+  - [x] Pop Up message 
+  - [x] Confirmation whether Yes Or No
 -[ ] Return Modal
 -[ ] Return confirm popup
   - Confirm button
