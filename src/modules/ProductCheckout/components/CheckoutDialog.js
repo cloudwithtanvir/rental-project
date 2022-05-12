@@ -13,13 +13,13 @@ import { makeStyles } from "@material-ui/core";
 import DialogActions from "@material-ui/core/DialogActions";
 import RotateLeftIcon from "@material-ui/icons/RotateLeft";
 
-import DateRangePicker from "../../../components/DateRangePicker";
-import DisabledDateRangePicker from "../../../components/DisabledDateRangePicker";
+import DateRangePicker from "../../DataTable/components/DateRangePicker";
+import DisabledDateRangePicker from "../../DataTable/components/DisabledDateRangePicker";
 import ProductInfo from "../../../components/ProductInfo";
 import PopUpFooterSection from "../../../Modal/PopUpFooterSection";
 import MileageInputForReturn from "../../../components/MileageInputForReturn";
-import {DifferenceInDay} from "../../../Modal/BookAndReturn/BookAndReturnCalcu";
-import {IntegerValidation} from "../../../Modal/BookAndReturn/BookAndReturnCalcu";
+import {DifferenceInDay} from "../../../Modal/CalcFunction";
+import {IntegerValidation} from "../../../Modal/CalcFunction";
 
 const useStyles = makeStyles((theme) => ({
   root: {
