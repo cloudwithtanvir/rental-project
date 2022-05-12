@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PopUpFooterSection({ duration, product }) {
+export default function CostCalcPopUp({ duration, product }) {
   const classes = useStyles();
   const isBookingPossible = product.discount
     ? true

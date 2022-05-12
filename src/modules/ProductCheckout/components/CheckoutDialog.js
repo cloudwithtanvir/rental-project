@@ -16,9 +16,9 @@ import RotateLeftIcon from "@material-ui/icons/RotateLeft";
 import DateRangePicker from "../../DataTable/components/DateRangePicker";
 import DisabledDateRangePicker from "../../DataTable/components/DisabledDateRangePicker";
 import ProductInfo from "../../../components/ProductInfo";
-import PopUpFooterSection from "../../../Modal/PopUpFooterSection";
+import CostCalcPopUp from "../../../Modal/CostCalcPopUp";
 import MileageInputForReturn from "../../../components/MileageInputForReturn";
-import {DifferenceInDay} from "../../../Modal/CalcFunction";
+import {DifferenceInDay} from "../../../DateCal/DifferenceInDay";
 import {IntegerValidation} from "../../../Modal/CalcFunction";
 
 const useStyles = makeStyles((theme) => ({
@@ -140,7 +140,7 @@ export default function CheckoutDialog({
 
         {(buttonType === "book" ||
           (buttonType === "return" && product.startDate)) && (
-          <PopUpFooterSection
+          <CostCalcPopUp
             duration={
               buttonType === "return" && product.startDate
                 ? DifferenceInDay(product.startDate, product.endDate)

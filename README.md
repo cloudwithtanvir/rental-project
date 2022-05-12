@@ -16,7 +16,7 @@ I started reading & following :
 Rental Software
 
 - [x] Displaying Data from Json
-- [x] SearchBox
+- [x] SearchBox (Dynamic serach by using stringify)
 - [x] Two buttons
 - [x] Checking whether product available for rent or not , If availibity true then product available for booking either available for returing.  
 - [x] Modal/PopUp for Booking 
@@ -27,9 +27,9 @@ Rental Software
 - [x] Book confirm popup
   - [x] Pop Up message 
   - [x] Confirmation whether Yes Or No
--[ ] Return Modal
--[ ] Return confirm popup
-  - Confirm button
+- [ ] Return Modal
+- [ ] Return confirm popup
+- [] Confirm button
 
 
 # Step 3: Figuring out how to store data as it suggested not to use backend 
