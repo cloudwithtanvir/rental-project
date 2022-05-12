@@ -53,6 +53,9 @@ export default function EnhancedTable({
   const [searched, setSearched] = React.useState("");
 
   React.useEffect(() => {
+    console.log('handleClick 2',dataList[0]);
+    setSelectedRow(dataList[0]);
+    callBackForTable(dataList[0]);
     setRows(dataList);
     cancelSearch();
   }, [dataList]);
@@ -69,17 +72,6 @@ export default function EnhancedTable({
     setSearched("");
     setRows(dataList);
     //requestSearch(searched);
-  };
-
-  const handleClick = (event, name) => {
-    // console.log(name);
-    if (selectedRow && selectedRow.id === name.id) {
-      callBackForTable(null);
-      setSelectedRow(null);
-    } else {
-      callBackForTable(name);
-      setSelectedRow(name);
-    }
   };
   const handleSelectAllClick = (event) => {
     if (event.target.checked) {
@@ -148,12 +140,10 @@ export default function EnhancedTable({
 
                   return (
                     <TableRow
-                      onClick={(event) => handleClick(event, row)}
                       hover
                       role="checkbox"
                       tabIndex={-1}
                       key={row.id}
-                      selected={selectedRow && selectedRow.id === row.id}
                       className={
                         selectedRow && selectedRow.availability
                           ? classes.tableRowTrue

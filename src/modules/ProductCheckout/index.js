@@ -50,7 +50,7 @@ export default function ProductCheckout({
     // calulation for booking and post only if yes pressed on final confirmation dialog
     if (e === "success") {
       if (buttonType === "book") postBooking({ ...product }, { ...timeRange });
-      //else postReturn({ ...product }, mileAgeAdded);
+      else postReturn({ ...product }, mileAgeAdded);
       updateTable();
       setOpen(false);
     }

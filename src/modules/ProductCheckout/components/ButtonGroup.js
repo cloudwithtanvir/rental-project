@@ -20,7 +20,7 @@ export default function ButtonGroup({ handleOpenCheckoutDialog, selectedRow }) {
         variant="contained"
         color="primary"
         onClick={() => handleOpenCheckoutDialog("book")}
-        disabled={!selectedRow || !selectedRow.availability}
+       
         className={classes.button}
       >
         Book
@@ -29,7 +29,7 @@ export default function ButtonGroup({ handleOpenCheckoutDialog, selectedRow }) {
         variant="contained"
         color="secondary"
         onClick={() => handleOpenCheckoutDialog("return")}
-        disabled={!selectedRow || selectedRow.availability}
+       
         className={classes.button}
       >
         Return

@@ -32,7 +32,10 @@ Rental Software
 - [] Confirm button
 
 
-# Step 3: Figuring out how to store data as it suggested not to use backend 
+# Step 3: Resoures I have used:
+
+
+# Step 4: Figuring out how to store data as it suggested not to use backend 
 
 As it's recomanded not to use backend, so we don't have any database without data.json file. So, i figured out Js has already awesome solution that ia localStorage/sessionStorage oobject. So for fetching & storing data I have used localStorage.
 
