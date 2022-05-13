@@ -1,4 +1,4 @@
-export const postReturn = (product, mileage) => {
+export const storeReturn = (product, mileage) => {
     const dataList = JSON.parse(localStorage.getItem("dataList"));
   
     if (product.type === "meter")

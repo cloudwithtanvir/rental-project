@@ -5,8 +5,8 @@ import Snackbar from "@material-ui/core/Snackbar";
 import CheckoutDialog from "./components/CheckoutDialog";
 import ConfirmationDialog from "./components/ConfirmationDialog";
 import ButtonGroup from "./components/ButtonGroup";
-import {postBooking} from "../../components/CalcBook"
-import {postReturn} from "../../components/CalcReturn"
+import {storeBooking} from "../../localStorage/storeBooking"
+import {storeReturn} from "../../localStorage/storeReturn"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,8 +49,8 @@ export default function ProductCheckout({
 
     // calulation for booking and post only if yes pressed on final confirmation dialog
     if (e === "success") {
-      if (buttonType === "book") postBooking({ ...product }, { ...timeRange });
-      else postReturn({ ...product }, mileAgeAdded);
+      if (buttonType === "book") storeBooking({ ...product }, { ...timeRange });
+      else storeReturn({ ...product }, mileAgeAdded);
       updateTable();
       setOpen(false);
     }

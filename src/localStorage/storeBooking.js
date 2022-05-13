@@ -1,4 +1,4 @@
-export const postBooking= (product, timerange) => {
+export const storeBooking= (product, timerange) => {
     const duration = timerange.duration;
     const dataList = JSON.parse(localStorage.getItem("dataList"));
   

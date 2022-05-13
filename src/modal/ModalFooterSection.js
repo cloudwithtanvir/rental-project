@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-import {calculateBookingCost} from "./CalcFunction";
+import {calculateBookingCost} from "../Calculation/BookingCost";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CostCalcPopUp({ duration, product }) {
+export default function ModalFooterSection({ duration, product }) {
   const classes = useStyles();
   const isBookingPossible = product.discount
     ? true
